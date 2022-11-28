@@ -1,0 +1,33 @@
+//SAVE
+POST /api/v1/blog/create HTTP/1.1
+Host: localhost:3333
+Content-Type: application/json
+{
+    "blogHeader":"header",
+    "blogContent":"icerik",
+    "blogImage":"url"
+}
+
+//LIST
+GET /api/v1/blog/list HTTP/1.1
+Host: localhost:3333
+
+//FIND
+GET /api/v1/blog/find/1 HTTP/1.1
+Host: localhost:3333
+
+
+//UPDATE
+PUT /api/v1/blog/update/1 HTTP/1.1
+Host: localhost:3333
+Content-Type: application/json
+Content-Length: 143
+{
+    "blogHeader":"header1111",
+    "blogContent":"içerik1111",
+    "blogImage":"url1111",
+}
+
+//DELETE
+DELETE /api/v1/blog/delete/1 HTTP/1.1
+Host: localhost:3333
